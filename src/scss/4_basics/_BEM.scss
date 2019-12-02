@@ -50,6 +50,7 @@
 
     &:first-child{
       padding-left: 0;
+      margin-right: 0px;
     }
   }
 
@@ -57,7 +58,7 @@
   &__text{
     &:after {
       content: '';
-      width: 96%;
+      width: 97%;
       height: 1px;
       display: block;
       background-position-x: 0;
@@ -79,14 +80,14 @@
   &__text{
     &:after {
       content: '';
-      width: 96%;
+      width: 99%;
       height: 1px;
       display: block;
       background-position-x: 0;
       position: absolute;
       background-repeat: repeat-x;
       bottom: -1px;
-      left: 2%;
+      left: 0.5%;
       background-image: url(../svg/menu-dotty.min.svg);
     }
   }
@@ -129,14 +130,14 @@
   .text__txt{
     &:after {
       content: '';
-      width: 96%;
+      width: 99%;
       height: 1px;
       display: block;
       background-position-x: 0;
       position: absolute;
       background-repeat: repeat-x;
       bottom: -1px;
-      left: 2%;
+      left: 1%;
       background-image: url(../svg/menu-dotty.min.svg);
     }
   }
@@ -219,10 +220,6 @@
   &__line2{
     transform: rotate(-45deg);
   }
-}
-
-.showContact--animated{
-  
 }
 
 @keyframes animate-menu-dotty { 
