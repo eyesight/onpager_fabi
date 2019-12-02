@@ -1,0 +1,79 @@
+{
+  "name": "nswow-theme",
+  "version": "1.0.0",
+  "dependencies": {
+    "sticky-js": "^1.2.0"
+  },
+  "devDependencies": {
+    "acorn": "^6.3.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^5.16.0",
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-load-plugins": "^1.6.0",
+    "gulp-multi-dest": "^1.3.7",
+    "gulp-phplint": "^0.9.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgmin": "^2.2.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "gulp-wp-pot": "^2.3.5",
+    "gulp-xo": "^0.21.0",
+    "merge-stream": "^1.0.1",
+    "rimraf": "^2.7.1",
+    "webpack": "^4.39.3",
+    "webpack-stream": "^5.2.1"
+  },
+  "author": "NeidhartSchön AG",
+  "license": "proprietary",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/mms-wordpress/wp-skeleton.git"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "ie >= 8",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ],
+  "xo": {
+    "parser": "babel-eslint",
+    "space": true,
+    "rules": {
+      "unicorn/filename-case": [
+        "error",
+        {
+          "case": "pascalCase"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/*
+  Usage:
+  @include font(type-face, font-weight, font-style);
+*/
+@mixin font($type-face: $font-sans-serif, $font-weight: $font-weight-normal, $font-style: normal) {
+  font-family: $type-face;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,9 @@
+/*
+  Usage:
+  Livingdocs component margin-bottom
+*/
+@mixin ld-margin-bottom($margin: $gutter, $selector: '*'){
+  & + #{$selector}{
+    margin-top: $margin;
+  }
+}

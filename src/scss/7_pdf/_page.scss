@@ -1,0 +1,23 @@
+@page {
+
+  counter-increment: page 1;
+
+  margin-top: 0mm;
+  margin-bottom: 0mm;
+  margin-left: 0mm;
+  margin-right: 0mm;
+
+  -ro-bleed-width: 0mm;
+  -ro-media-size: A4;
+  -ro-crop-size: media;
+
+  -ro-truncate-margin-after-break: always;
+
+  @bottom-right-corner {
+    content: counter(page);
+  }
+}
+
+body {
+  hyphens: auto;
+}

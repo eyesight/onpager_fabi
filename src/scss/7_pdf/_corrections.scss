@@ -1,0 +1,21 @@
+/*
+  VERY IMPORTANT NOTICE: DO NOT DELETE FOR PDF REACTOR 10
+*/
+html {
+  height: auto;
+  overflow-x: visible;
+}
+
+/*
+  VERY IMPORTANT NOTICE: DO NOT DELETE FOR PDF REACTOR 10
+*/
+body {
+  background: transparent;
+}
+
+.ns-pdf-pagebreak {
+  position: relative;
+  width: 100%;
+  page-break-after: always !important;
+  display: block;
+}

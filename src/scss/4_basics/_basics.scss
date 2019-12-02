@@ -1,0 +1,94 @@
+html {
+  font-size: 62.5%;
+}
+
+body:before, body:after {
+  content: "";
+  position: fixed;
+  background: $color-white;
+  left: 0;
+  right: 0;
+  height: 30px;
+}
+
+body:before {
+  top: 0;
+}
+
+body:after {
+  bottom: 0;
+}
+
+body {
+  @include font($font-sans-serif, $font-weight-normal);
+  @include font-size($font-settings-body);
+  height: 100vh;
+  position: relative; 
+  //background-color: $color-primary;
+  border-left: 30px solid $color-white;
+  border-right: 30px solid $color-white;  
+
+  &:not(.no-focus) {
+    *:focus{
+      outline: $color-primary auto 1px;
+    }
+  }
+}
+
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+h1 {
+  @include font-size($font-settings-h1);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+  &.lazy {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+  }
+
+  &.loaded {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.ns-bold,
+strong,
+b {
+  font-weight: $font-weight-bold;
+}
+
+.superscript,
+.subscript,
+sup,
+sub {
+  font-size: 60%;
+  line-height: 0;
+  vertical-align: baseline;
+  position: relative;
+  padding: 0 1px;
+}
+
+.superscript,
+sup {
+  top: -0.6em;
+}
+
+sub,
+.subscript {
+  top: 0.4em;
+}
+
+.no-focus{
+  *:focus{
+    outline: 0;
+  }
+}

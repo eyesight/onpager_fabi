@@ -1,0 +1,38 @@
+// FONT-FACE SETTINGS HERE
+// TYPE-FACE SETTINGS
+$font-sans-serif: 'Cantarell', sans-serif !default;
+$font-title: 'Merriweather', serif !default;
+
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+
+// FONT-SIZE SETTINGS
+$font-settings-body: (
+  null: (
+    1.6rem,
+    2.2rem  
+  ),
+  md: (
+    1.6rem,
+    2.2rem
+  ),
+  print: (
+    9pt,
+    11pt
+  )
+) !default;
+
+$font-settings-h1: (
+  null: (
+    3.5rem,
+    1.2
+  ),
+  md: (
+    3.5rem,
+    1.2
+  ),
+  print: (
+    30pt,
+    30pt
+  )
+) !default;

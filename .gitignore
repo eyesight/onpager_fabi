@@ -1,0 +1,77 @@
+*.log
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+
+*.cssc
+
+*.scssc
+
+#######################
+# Bedrock starts here #
+#######################
+
+# WordPress
+web/wp
+web/.htaccess
+web/app/languages
+
+# Capistrano
+.capistrano
+
+# WP-CLI
+db-sync
+sql-dump-*.sql
+
+.DS_Store
+
+# Dotenv
+.env
+.env.*
+
+# Backend
+
+web/app/debug.log
+web/app/db.php
+
+web/app/advanced-cache.php
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/mu-plugins/*
+!web/app/mu-plugins/.gitkeep
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+
+!web/app/mu-plugins/register-theme-directory.php
+!web/app/mu-plugins/bedrock-autoloader.php
+
+#Excel documents
+web/excels/*
+!web/excels/.gitkeep
+
+# Vendor (e.g. Composer)
+vendor/*
+!vendor/.gitkeep
+
+# Node Package Manager
+node_modules
+
+# Vagrant
+bin
+.vagrant
+
+
+
+# IDE Metadata
+
+*~
+.idea
+.vscode
+
+
+
+
+
+
+

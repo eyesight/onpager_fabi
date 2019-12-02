@@ -1,0 +1,8 @@
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 1">
+  <title>menu-dotty</title>
+  <g>
+    <line y1="0.5" x2="1.75" y2="0.5" style="fill: none;stroke: #000;stroke-miterlimit: 10"/>
+    <line x1="5.25" y1="0.5" x2="31.5" y2="0.5" style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-dasharray: 3.5,3.5"/>
+    <line x1="33.25" y1="0.5" x2="35" y2="0.5" style="fill: none;stroke: #000;stroke-miterlimit: 10"/>
+  </g>
+</svg>

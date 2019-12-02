@@ -1,0 +1,7 @@
+.ns-article {
+  break-after: always;
+
+  &:last-child{
+    break-after: avoid;
+  }
+}
