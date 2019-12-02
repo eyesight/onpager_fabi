@@ -145,6 +145,10 @@
 }
 }
 
+.nowhitespace{
+  white-space: nowrap;
+}
+
 .text-wrapper{
   width: 50%; 
   @include md-max{
