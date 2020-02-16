@@ -22,7 +22,7 @@ body:after {
 body {
   @include font($font-sans-serif, $font-weight-normal);
   @include font-size($font-settings-body);
-  height: 100vh;
+  height: 100%;
   position: relative; 
   //background-color: $color-primary;
   border-left: 30px solid $color-white;

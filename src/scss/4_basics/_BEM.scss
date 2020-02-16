@@ -16,7 +16,11 @@
 }
 
 .navigation{
-  @include flexbox();
+  @include flexbox(column, wrap, flex-start, flex-start);
+  
+  @include sm-min(sm){
+    @include flexbox(row, wrap, flex-start, flex-start);
+  }
 
   &__item,
   &__link{
@@ -30,6 +34,11 @@
     cursor: pointer;
     margin-right: 30px;
     letter-spacing: 0.06rem;
+    padding: 7px 0px 2px;
+    
+    @include sm-min(){
+      padding: 1px 7px 2px;
+    }
 
     a{
       color: $color-black;
@@ -51,6 +60,10 @@
     &:first-child{
       padding-left: 0;
       margin-right: 0px;
+      padding-top: 0px;
+      @include sm-min(){
+        padding-top: 1px;
+      }
     }
   }
 
@@ -146,7 +159,12 @@
 }
 
 .nowhitespace{
-  white-space: nowrap;
+  @include flexbox(column, wrap, flex-start, flex-start);
+  white-space: pre-line;
+  @include sm-min(){
+    white-space: nowrap;
+    display: inline;
+  }
 }
 
 .text-wrapper{
@@ -223,6 +241,13 @@
   }
   &__line2{
     transform: rotate(-45deg);
+  }
+}
+
+.desktop-only{
+  display: none;
+  @include sm-min(sm){
+    display: inline;
   }
 }
 
