@@ -168,6 +168,7 @@
 
 .text-wrapper{
   width: 50%; 
+  max-width: 700px; 
   @include md-max{
     width: 100%;
   }
