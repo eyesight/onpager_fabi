@@ -2,7 +2,7 @@
 import Theme from './Theme';
 import FocusHandler from './Classes/FocusHandler';
 import LazyLoad from './Classes/Lazyload';
-import ShowContact from './Classes/ShowContact';
+//import ShowContact from './Classes/ShowContact';
 import Mailsaver from './Classes/Mailsaver';
 
 module.exports = Theme;
@@ -12,11 +12,11 @@ module.exports = Theme;
     new FocusHandler();
     new LazyLoad();
 
-    new ShowContact({
+    /* new ShowContact({
       linkSelector: '.js-openContact',
       wrapperSelector: 'body',
       btnSelector: '.js-close-btn'
-    });
+    }); */
 
     new Mailsaver({
       mailSelectors: '.js-mail'
