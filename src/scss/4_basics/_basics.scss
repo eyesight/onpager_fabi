@@ -2,8 +2,9 @@ html {
   font-size: 62.5%;
 }
 
-body:before, body:after {
-  content: "";
+body:before,
+body:after {
+  content: '';
   position: fixed;
   background: $color-white;
   left: 0;
@@ -22,20 +23,24 @@ body:after {
 body {
   @include font($font-sans-serif, $font-weight-normal);
   @include font-size($font-settings-body);
+
   height: 100%;
-  position: relative; 
+  position: relative;
+
   //background-color: $color-primary;
   border-left: 30px solid $color-white;
-  border-right: 30px solid $color-white;  
+  border-right: 30px solid $color-white;
 
   &:not(.no-focus) {
-    *:focus{
+    *:focus {
       outline: $color-primary auto 1px;
     }
   }
 }
 
-*, *:before, *:after{
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -66,6 +71,10 @@ b {
   font-weight: $font-weight-bold;
 }
 
+a {
+  cursor: $cursorFabi;
+}
+
 .superscript,
 .subscript,
 sup,
@@ -87,8 +96,8 @@ sub,
   top: 0.4em;
 }
 
-.no-focus{
-  *:focus{
+.no-focus {
+  *:focus {
     outline: 0;
   }
 }

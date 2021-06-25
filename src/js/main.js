@@ -1,11 +1,8 @@
 // Bundle theme module
-import Theme from './Theme';
 import FocusHandler from './Classes/FocusHandler';
 import LazyLoad from './Classes/Lazyload';
 //import ShowContact from './Classes/ShowContact';
 import Mailsaver from './Classes/Mailsaver';
-
-module.exports = Theme;
 
 (function () {
   document.addEventListener('DOMContentLoaded', () => {

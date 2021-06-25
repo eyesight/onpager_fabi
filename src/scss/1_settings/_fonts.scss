@@ -8,31 +8,31 @@ $font-weight-bold: 700 !default;
 
 // FONT-SIZE SETTINGS
 $font-settings-body: (
-  null: (
-    1.5rem,
-    2.2rem  
-  ),
-  xs: (
-    1.6rem,
-    2.2rem
-  ),
-  print: (
-    9pt,
-    11pt
-  )
+    null: (
+        1.5rem,
+        2.2rem,
+    ),
+    xs: (
+        1.6rem,
+        2.2rem,
+    ),
+    print: (
+        9pt,
+        11pt,
+    ),
 ) !default;
 
 $font-settings-h1: (
-  null: (
-    3.5rem,
-    1.2
-  ),
-  md: (
-    3.5rem,
-    1.2
-  ),
-  print: (
-    30pt,
-    30pt
-  )
+    null: (
+        3.5rem,
+        1.2,
+    ),
+    md: (
+        3.5rem,
+        1.2,
+    ),
+    print: (
+        30pt,
+        30pt,
+    ),
 ) !default;
